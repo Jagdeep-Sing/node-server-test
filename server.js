@@ -18,6 +18,13 @@ app.get('/', (req, res) => {
     welcomeMsg: 'Welcome to the Awesomeness of your DREAMS'
   });
 });
+
+app.get('/products', (req,res) =>{
+  res.render('products.hbs', {
+    pageTitle: 'Products page',
+    welcomeMsg: 'See these awesome products and get mad!!'
+  });
+});
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About page'
